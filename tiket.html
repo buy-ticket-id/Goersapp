@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Pilih tiket CILACAP INDIE FEST 2026. 27 Dec 2026, Kepakisan Cilacap, Purwokerto - Banjarnegara - Cilacap. earlybird - FESTIVAL IDR 85.000.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GOERS">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="Pilih Tiket - CILACAP INDIE FEST 2026 - GOERS">
+  <meta property="og:description" content="CILACAP INDIE FEST 2026 · 27 Dec 2026 · 19 pilihan tiket mulai IDR 85.000">
+  <meta property="og:image" content="banner.webp">
+  <meta property="og:image:alt" content="Banner CILACAP INDIE FEST 2026">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pilih Tiket - CILACAP INDIE FEST 2026 - GOERS">
+  <meta name="twitter:description" content="CILACAP INDIE FEST 2026 · 27 Dec 2026 · 19 pilihan tiket mulai IDR 85.000">
+  <meta name="twitter:image" content="banner.webp">
+  <link rel="icon" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Pilih Tiket - CILACAP INDIE FEST 2026 - GOERS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicFestival",
+    "name": "CILACAP INDIE FEST 2026",
+    "description": "CILACAP INDIE FEST 2026 di Kepakisan Cilacap, Purwokerto - Banjarnegara - Cilacap — 27 Desember 2026.",
+    "image": ["banner.webp"],
+    "startDate": "2026-12-27",
+    "endDate": "2026-12-27",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "isAccessibleForFree": false,
+    "location": {
+      "@type": "Place",
+      "name": "Kepakisan Cilacap, Purwokerto - Banjarnegara - Cilacap",
+      "address": { "@type": "PostalAddress", "addressLocality": "Cilacap", "addressRegion": "Jawa Tengah", "addressCountry": "ID" }
+    },
+    "organizer": { "@type": "Organization", "name": "Shaolin Music" },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "IDR",
+      "lowPrice": "139000",
+      "highPrice": "549000",
+      "offerCount": "19",
+      "availability": "https://schema.org/InStock",
+      "url": "tiket.html"
+    }
+  }
+  </script>
+  <style>
+    :root{--teal:#14A38B;--teal-d:#0E7C6B;--mint:#D9F4EE;--mint-h:#C6EDE2;--navy:#1D2B5F;--date:#1D3B6E;--pink:#EB1260}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{font-family:'Plus Jakarta Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+    .font-goers{font-family:'Baloo 2','Plus Jakarta Sans',sans-serif}
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s cubic-bezier(.22,.61,.36,1)}
+    .reveal.in{opacity:1;transform:none}
+    .press{transition:transform .12s ease}
+    .press:active{transform:scale(.96)}
+    .pkg-panel,.jadwal-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+    .pkg-panel>div,.jadwal-panel>div{overflow:hidden}
+    .pkg-panel.open,.jadwal-panel.open{grid-template-rows:1fr}
+    .pkg-icon{transition:transform .3s ease}
+    [aria-expanded="true"] .pkg-icon{transform:rotate(180deg)}
+    .add-btn.off{display:none}
+    .stepper{display:none}
+    .stepper.on{display:flex}
+    #checkoutBtn{transition:background-color .25s ease,color .25s ease,box-shadow .25s ease,transform .12s ease}
+    #checkoutBtn.is-ready{background:var(--teal);color:#fff;box-shadow:0 8px 20px rgba(20,163,139,.32);cursor:pointer}
+    #checkoutBtn.is-ready:active{transform:scale(.97)}
+    #checkoutBtn.is-loading{opacity:.75;pointer-events:none}
+    #toastWrap{position:fixed;top:calc(env(safe-area-inset-top) + 12px);left:50%;transform:translateX(-50%);z-index:70;display:flex;flex-direction:column;align-items:center;gap:8px;width:max-content;max-width:92vw;pointer-events:none}
+    .toast{background:#0F172A;color:#fff;font-size:12.5px;font-weight:600;padding:10px 16px;border-radius:999px;box-shadow:0 8px 24px rgba(15,23,42,.28);opacity:0;transform:translateY(-8px);transition:opacity .25s ease,transform .25s ease;max-width:100%;text-align:center}
+    .toast.show{opacity:1;transform:none}
+    #lightbox{display:none}
+    #lightbox.on{display:flex}
+    .noscroll{overflow:hidden}
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .reveal{opacity:1;transform:none;transition:none}
+      .press:active{transform:none}
+      .pkg-panel,.jadwal-panel,.pkg-icon,.toast,#checkoutBtn{transition:none}
+    }
+  </style>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body class="pb-36 bg-white text-slate-800">
+
+  <div id="toastWrap" aria-live="polite"></div>
+
+  <header class="bg-white border-b border-gray-100">
+    <div class="max-w-md mx-auto px-4 pt-3 pb-2.5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-1.5 press" aria-label="GOERS Beranda">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" aria-hidden="true">
+          <defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF3D77"/><stop offset="1" stop-color="#C90B4E"/></linearGradient></defs>
+          <path d="M12 1.8 L20.6 6.7 V17.3 L12 22.2 L3.4 17.3 V6.7 Z" fill="url(#gg)" stroke="url(#gg)" stroke-width="2.5" stroke-linejoin="round"/>
+          <text x="12" y="16.3" text-anchor="middle" font-family="'Baloo 2',sans-serif" font-size="12.5" font-weight="800" fill="#ffffff">G</text>
+        </svg>
+        <span class="font-goers text-[21px] font-extrabold text-slate-900 tracking-tight leading-none">GOERS</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <button id="langBtn" type="button" class="flex items-center gap-1 press" aria-label="Pilih bahasa">
+          <span class="w-5 h-5 rounded-full overflow-hidden inline-flex flex-col border border-gray-200" aria-hidden="true"><span class="flex-1 bg-[#E63946]"></span><span class="flex-1 bg-white"></span></span>
+          <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-500"></i>
+        </button>
+        <button id="exploreBtn" type="button" class="relative flex items-center gap-1.5 bg-gray-100 hover:bg-gray-200 text-slate-800 px-3.5 py-2 rounded-full text-[13.5px] font-semibold press">
+          <i data-lucide="compass" class="w-4 h-4 text-slate-700"></i>
+          <span>Jelajahi</span>
+          <span class="absolute -top-1.5 -right-2 bg-[#EB1260] text-white text-[8.5px] font-extrabold rounded-full px-1.5 py-px tracking-wide">NEW</span>
+        </button>
+        <button id="userBtn" type="button" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center press" aria-label="Akun saya">
+          <i data-lucide="user" class="w-5 h-5 text-slate-700"></i>
+        </button>
+      </div>
+    </div>
+    <div class="max-w-md mx-auto px-4 pb-3">
+      <div class="relative">
+        <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+        <input id="searchInput" type="search" placeholder="Cari keseruan" enterkeyhint="search" aria-label="Cari keseruan" class="w-full bg-gray-100 text-[13.5px] rounded-full pl-10 pr-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#14A38B]/25 focus:bg-white transition">
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-md mx-auto px-4 pt-4 pb-36">
+
+    <nav aria-label="Breadcrumb" class="text-[13px] leading-relaxed reveal">
+      <div class="flex items-center flex-wrap gap-x-1.5 gap-y-1 text-[#475569]">
+        <button type="button" class="demo-link press hover:text-[#EB1260] font-medium">Beranda</button>
+        <i data-lucide="chevron-right" class="w-3 h-3 text-gray-300" aria-hidden="true"></i>
+        <button type="button" class="demo-link press hover:text-[#EB1260] font-medium">Event</button>
+        <i data-lucide="chevron-right" class="w-3 h-3 text-gray-300" aria-hidden="true"></i>
+        <button type="button" class="demo-link press hover:text-[#EB1260] font-medium">Cilacap</button>
+        <i data-lucide="chevron-right" class="w-3 h-3 text-gray-300" aria-hidden="true"></i>
+        <a href="index.html" class="press hover:text-[#EB1260] font-medium">CILACAP INDIE FEST 2026</a>
+        <i data-lucide="chevron-right" class="w-3 h-3 text-gray-300" aria-hidden="true"></i>
+        <span class="font-bold text-[#1D2B5F]">Pilih Tiket</span>
+      </div>
+    </nav>
+
+    <section class="mt-4 reveal">
+      <p class="text-[15px] text-slate-500">Pilih tiket Anda untuk</p>
+      <h1 class="text-[26px] leading-[1.22] font-extrabold text-slate-900 mt-1">CILACAP INDIE FEST 2026</h1>
+      <h2 class="text-[15.5px] font-bold text-slate-800 mt-5">Tiket untuk CILACAP INDIE FEST 2026:</h2>
+    </section>
+
+    <section aria-label="Daftar tiket" class="mt-3.5 space-y-3.5">
+
+      <article class="tcard bg-white rounded-2xl border border-gray-200/90 shadow-[0_1px_3px_rgba(16,24,40,0.05)] p-3.5 reveal" data-id="earlybird-festival" data-price="85000" data-min="1" data-max="10" data-name="earlybird - FESTIVAL" data-benefit="ee-sendiri" data-thumb="banner.webp">
+        <div class="flex items-start justify-between gap-3">
+          <h3 class="min-w-0 flex-1 text-[17px] leading-[1.35] text-slate-800">earlybird - FESTIVAL</h3>
+          <figure class="relative shrink-0 w-[92px] h-[61px] rounded-lg overflow-hidden bg-slate-100">
+            <img src="banner.webp" alt="Tiket earlybird - FESTIVAL" class="w-full h-full object-cover" width="92" height="61" loading="lazy" decoding="async">
+            <button type="button" class="img-view absolute inset-x-0 bottom-0 pb-0.5 pt-4 text-white text-[11.5px] font-semibold bg-gradient-to-t from-black/45 to-transparent press" aria-label="Perbesar gambar Tiket earlybird - FESTIVAL">Lihat gambar</button>
+          </figure>
+        </div>
+        <p class="flex items-center gap-2 mt-3 text-[14.5px] font-medium text-[#1D3B6E]"><span class="w-[19px] h-[19px] rounded-full bg-[#1D3B6E] flex items-center justify-center shrink-0" aria-hidden="true"><i data-lucide="clock" class="w-[11px] h-[11px] text-white"></i></span>27 Dec '26, 15.00-23.00 WIB</p>
+
+        <button type="button" class="pkg-toggle mt-3 text-[15px] font-semibold text-[#14A38B] press" aria-expanded="false" aria-controls="pkg-ee1b">Lihat Detail Paket</button>
+        <div class="pkg-panel" id="pkg-ee1b"><div><ul class="ben-list text-[12.5px] text-slate-600 space-y-1.5 py-2.5"></ul></div></div>
+        <p class="mt-3"><span class="inline-flex items-center bg-[#EEF1F4] rounded-lg px-3 py-1.5 text-[12px] font-bold text-[#3FB3E8] leading-snug">Harga tidak termasuk Pajak &amp; Biaya Platform</span></p>
+        <div class="mt-4 flex items-center justify-end gap-4">
+          <p class="text-[17px] font-bold text-slate-900">IDR 85.000</p>
+          <div class="shrink-0">
+            <button type="button" class="add-btn bg-[#D9F4EE] hover:bg-[#C6EDE2] text-[#14A38B] text-[16px] font-bold rounded-full px-6 py-2.5 transition-colors press" aria-label="Tambah tiket earlybird - FESTIVAL">Tambah</button>
+            <div class="stepper items-center bg-[#D9F4EE] rounded-full h-[42px] px-1" data-stepper>
+              <button type="button" class="dec w-10 h-10 flex items-center justify-center text-[#14A38B] press" aria-label="Kurangi tiket earlybird - FESTIVAL"><i data-lucide="minus" class="w-4 h-4"></i></button>
+              <span class="qty w-8 text-center text-[16px] font-bold text-[#0E7C6B]" aria-live="polite">0</span>
+              <button type="button" class="inc w-10 h-10 flex items-center justify-center text-[#14A38B] press" aria-label="Tambah tiket earlybird - FESTIVAL"><i data-lucide="plus" class="w-4 h-4"></i></button>
+            </div>
+          </div>
+        </div>
+        <p class="mt-2 text-right text-[13px] text-slate-400">Max 10 tix/user</p>
+      </article>
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-200/80 bg-white">
+    <div class="max-w-md mx-auto px-4 pt-8 pb-6 text-[15px]">
+      <div class="space-y-7">
+        <nav aria-label="Menggunakan Goers">
+          <h2 class="text-[15px] font-extrabold text-[#1D2B5F] mb-4">MENGGUNAKAN GOERS</h2>
+          <ul class="space-y-3.5 text-slate-700">
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Penawaran Terbaik</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Lokasi Terbaik</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Promo</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Pusat Bantuan</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Kebijakan Privasi</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Syarat dan Ketentuan</button></li>
+          </ul>
+        </nav>
+        <nav aria-label="Informasi">
+          <h2 class="text-[15px] font-extrabold text-[#1D2B5F] mb-4">INFORMASI</h2>
+          <ul class="space-y-3.5 text-slate-700">
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Menayangkan Event di Goers</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Solusi Pemilik Venue</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Unduh Brosur</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Goers Experience Manager</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Point of Sales</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Ticket Scanner</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Harga</button></li>
+          </ul>
+        </nav>
+        <nav aria-label="Bisnis">
+          <h2 class="text-[15px] font-extrabold text-[#1D2B5F] mb-4">BISNIS</h2>
+          <ul class="space-y-3.5 text-slate-700">
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Solusi New Normal</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Managemen Online Event</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Venue &amp; Event Olahraga</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Taman Bertema</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Tur &amp; Wisata</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Pameran</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Konser &amp; Musik</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Seminar</button></li>
+          </ul>
+        </nav>
+        <nav aria-label="Bertemu Goers">
+          <h2 class="text-[15px] font-extrabold text-[#1D2B5F] mb-4">BERTEMU GOERS</h2>
+          <ul class="space-y-3.5 text-slate-700">
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Tentang Kami</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Blog</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Karir</button></li>
+            <li><button type="button" class="demo-link press hover:text-[#14A38B]">Press Kit</button></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="text-[15px] font-extrabold text-[#1D2B5F] mb-3">Layanan Pelanggan:</h2>
+          <ul class="space-y-2 text-slate-700">
+            <li>Instagram: <a href="https://instagram.com/goersapp" target="_blank" rel="noopener" class="press hover:text-[#14A38B]">@goersapp</a></li>
+            <li>Email: <a href="mailto:cs@goersapp.com" class="press hover:text-[#14A38B]">cs@goersapp.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-[15px] font-extrabold text-[#1D2B5F] mb-2">Kantor Goers:</h2>
+          <p class="text-slate-500 leading-relaxed">Setiabudi Atrium Lt. 4 Unit 406<br>Kuningan, Setiabudi,<br>Kota Jakarta Selatan 12920</p>
+        </div>
+        <div>
+          <h2 class="text-[15px] font-extrabold text-[#1D2B5F] mb-2">Jam Kerja:</h2>
+          <p class="text-slate-500">Hari Kerja @ 09.00 - 20.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-200/80">
+      <div class="max-w-md mx-auto px-4 py-7 text-center">
+        <p class="text-[16px] text-slate-700">Privacy &amp; Security</p>
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <div class="text-left" aria-label="Komite Akreditasi Nasional">
+            <div class="flex items-center gap-0.5">
+              <svg class="w-6 h-6 -mr-1.5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 13.5 L9 19 L21 4" stroke="#E11D2E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="font-goers text-[30px] leading-none font-extrabold text-[#1B62C5] tracking-tight">KAN</span>
+            </div>
+            <p class="text-[9.5px] font-bold text-slate-800 leading-tight mt-0.5">Komite Akreditasi Nasional<br>LSSM-079-IDN</p>
+          </div>
+          <div class="w-[118px] rounded-lg border-2 border-[#1B62C5] overflow-hidden text-center bg-white" aria-label="Sertifikasi ISO 27001:2022">
+            <p class="flex items-center justify-center gap-1 text-[8px] font-extrabold text-slate-800 pt-1 tracking-wide"><svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 L20 5 V11 C20 16.5 16.7 20.6 12 22 C7.3 20.6 4 16.5 4 11 V5 Z" fill="#1B62C5"/></svg>EAS CERTIFICATION</p>
+            <p class="bg-[#1B62C5] text-white text-[13px] font-extrabold py-0.5 mt-0.5">ISO 27001:2022</p>
+            <p class="text-[6.5px] text-slate-600 leading-tight py-0.5 px-1">Information Security Management System</p>
+            <p class="flex items-center justify-center gap-0.5 text-[10px] font-extrabold text-[#1B62C5] pb-1"><svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 13.5 L9 19 L21 4" stroke="#16A34A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>CERTIFIED</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-7 mt-7">
+          <a href="https://instagram.com/goersapp" target="_blank" rel="noopener" aria-label="Instagram Goers" class="text-[#14A38B] hover:text-[#0E7C6B] press"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+          <a href="https://facebook.com/goersapp" target="_blank" rel="noopener" aria-label="Facebook Goers" class="text-[#14A38B] hover:text-[#0E7C6B] press"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.36-2.8H13.5V9.4c0-.81.22-1.36 1.38-1.36h1.48V5.55c-.26-.03-1.14-.11-2.16-.11-2.14 0-3.6 1.3-3.6 3.7v2.06H8.2V14h2.4v7h2.9z"/></svg></a>
+          <a href="https://x.com/goersapp" target="_blank" rel="noopener" aria-label="X Goers" class="text-[#14A38B] hover:text-[#0E7C6B] press"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+        <div class="mt-7">
+          <p class="text-[15px] text-slate-600">Dapatkan kabar terakhir dari kami</p>
+          <p class="text-[16px] font-extrabold text-slate-800 mt-0.5">Berlangganan newsletter</p>
+          <form id="newsForm" class="flex items-stretch gap-2.5 mt-4" novalidate>
+            <input id="newsEmail" type="email" placeholder="Alamat email" aria-label="Alamat email" class="flex-1 min-w-0 bg-gray-100 rounded-xl px-4 py-3 text-[14px] focus:outline-none focus:ring-2 focus:ring-[#14A38B]/25 focus:bg-white transition">
+            <button type="submit" class="shrink-0 bg-[#D9F4EE] hover:bg-[#C6EDE2] text-[#0E9F8A] text-[14.5px] font-bold rounded-full px-5 press">Berlangganan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-200/80">
+      <div class="max-w-md mx-auto px-4 py-5 text-center">
+        <p class="text-[15px] text-slate-600">Goers © 2021-2026. All Rights Reserved.</p>
+        <p class="text-[13px] text-slate-400 mt-1">Version 4.24.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="bottomBar" class="fixed bottom-0 inset-x-0 z-40 bg-white border-t border-gray-200/70 shadow-[0_-6px_20px_rgba(16,24,40,0.07)]" style="padding-bottom:env(safe-area-inset-bottom)">
+    <div class="max-w-md mx-auto px-4 py-3 flex items-end justify-between gap-3">
+      <div class="min-w-0">
+        <button id="detailBtn" type="button" class="text-[15px] font-bold text-[#14A38B] press">Lihat Detail Pesanan</button>
+        <p class="text-[14.5px] text-slate-500 mt-0.5">Total (<span id="totalCount">0</span> tiket)</p>
+        <p id="totalAmount" class="text-[16px] font-extrabold text-slate-900 leading-tight">–</p>
+      </div>
+      <button id="checkoutBtn" type="button" class="shrink-0 bg-[#E7E9EC] text-[#A6ADBB] text-[17.5px] font-bold rounded-full px-9 py-3.5 btn-disabled" aria-disabled="true">Pilih Tiket</button>
+    </div>
+  </div>
+
+  <div id="lightbox" class="fixed inset-0 z-[60] items-center justify-center bg-black/75 p-6" role="dialog" aria-modal="true" aria-label="Gambar tiket diperbesar">
+    <button id="lightboxClose" type="button" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/15 text-white flex items-center justify-center press" aria-label="Tutup gambar"><i data-lucide="x" class="w-5 h-5"></i></button>
+    <figure class="max-w-sm w-full">
+      <img id="lightboxImg" src="thumb-reg-3day.png" alt="" class="w-full rounded-xl shadow-2xl">
+      <figcaption id="lightboxCap" class="text-center text-white text-sm font-semibold mt-3"></figcaption>
+    </figure>
+  </div>
+
+  <script>
+  (function () {
+    'use strict';
+    const $ = (s, c) => (c || document).querySelector(s);
+    const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
+    const fmt = n => 'IDR ' + n.toLocaleString('id-ID');
+
+    const BENEFITS = {
+      'ee-berempat': ['Tiket untuk 1 orang', 'Berlaku Minggu, 27 Desember 2026 pukul 15.00–23.00 WIB', 'Akses area festival CILACAP INDIE FEST 2026', 'Akses pertunjukan musik indie sesuai ketentuan penyelenggara', 'E-ticket dikirim setelah pembayaran terverifikasi', 'E-ticket dikirim otomatis ke email setelah pembayaran terverifikasi'],
+      'ee-berdua': ['Tiket untuk 1 orang', 'Berlaku Minggu, 27 Desember 2026 pukul 15.00–23.00 WIB', 'Akses area festival CILACAP INDIE FEST 2026', 'Akses pertunjukan musik indie sesuai ketentuan penyelenggara', 'E-ticket dikirim setelah pembayaran terverifikasi', 'E-ticket dikirim otomatis ke email setelah pembayaran terverifikasi'],
+      'ee-sendiri': ['Tiket untuk 1 orang', 'Berlaku Minggu, 27 Desember 2026 pukul 15.00–23.00 WIB', 'Akses area festival CILACAP INDIE FEST 2026', 'Akses pertunjukan musik indie sesuai ketentuan penyelenggara', 'E-ticket dikirim setelah pembayaran terverifikasi', 'E-ticket dikirim otomatis ke email setelah pembayaran terverifikasi'],
+      'reg-berempat': ['Tiket untuk 1 orang', 'Berlaku 27 Desember 2026 pukul 15.00–23.00 WIB', 'Akses area festival CILACAP INDIE FEST 2026', 'Akses pertunjukan musik indie sesuai ketentuan penyelenggara', 'E-ticket dikirim setelah pembayaran terverifikasi', 'E-ticket dikirim otomatis ke email setelah pembayaran terverifikasi'],
+      'reg-berdua': ['Tiket untuk 1 orang', 'Berlaku 27 Desember 2026 pukul 15.00–23.00 WIB', 'Akses area festival CILACAP INDIE FEST 2026', 'Akses pertunjukan musik indie sesuai ketentuan penyelenggara', 'E-ticket dikirim setelah pembayaran terverifikasi', 'E-ticket dikirim otomatis ke email setelah pembayaran terverifikasi'],
+      'reg-sendiri': ['Tiket untuk 1 orang', 'Berlaku 27 Desember 2026 pukul 15.00–23.00 WIB', 'Akses area festival CILACAP INDIE FEST 2026', 'Akses pertunjukan musik indie sesuai ketentuan penyelenggara', 'E-ticket dikirim setelah pembayaran terverifikasi', 'E-ticket dikirim otomatis ke email setelah pembayaran terverifikasi'],
+      '3day': ['Berlaku Minggu, 27 Desember 2026 pukul 15.00–23.00 WIB', 'Tiket untuk 1 orang, berlaku setiap hari event', 'Akses area festival CILACAP INDIE FEST 2026', 'Penampilan musik festival selama 3 hari', 'E-ticket dikirim setelah pembayaran terverifikasi', 'E-ticket dikirim otomatis ke email setelah pembayaran terverifikasi']
+    };
+
+    const toastWrap = $('#toastWrap');
+    function toast(msg) {
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.setAttribute('role', 'status');
+      t.textContent = msg;
+      toastWrap.appendChild(t);
+      requestAnimationFrame(() => t.classList.add('show'));
+      setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 300); }, 2400);
+    }
+
+    const cards = $$('.tcard').map(el => ({
+      el, id: el.dataset.id, name: el.dataset.name,
+      price: +el.dataset.price, min: +el.dataset.min, max: +el.dataset.max,
+      addBtn: $('.add-btn', el), stepper: $('[data-stepper]', el),
+      qtyEl: $('.qty', el)
+    }));
+    const byId = {};
+    cards.forEach(c => { byId[c.id] = c; c.qty = 0; });
+
+    const totalCountEl = $('#totalCount');
+    const totalAmountEl = $('#totalAmount');
+    const checkoutBtn = $('#checkoutBtn');
+    let navigating = false;
+
+    function render() {
+      let count = 0, sum = 0;
+      cards.forEach(c => {
+        count += c.qty * c.min; sum += c.qty * c.price * c.min;
+        c.qtyEl.textContent = c.qty;
+        const active = c.qty > 0;
+        c.stepper.classList.toggle('on', active);
+        c.addBtn.classList.toggle('off', active);
+      });
+      totalCountEl.textContent = count;
+      totalAmountEl.textContent = count > 0 ? fmt(sum) : '–';
+      const ready = count > 0;
+      checkoutBtn.classList.toggle('is-ready', ready);
+      checkoutBtn.setAttribute('aria-disabled', String(!ready));
+      checkoutBtn.textContent = ready ? 'Checkout' : 'Pilih Tiket';
+    }
+
+    function bump(c, delta) {
+      const next = Math.min(c.max, Math.max(0, c.qty + delta));
+      if (delta > 0 && c.qty >= c.max) { toast('Maksimal ' + c.max + ' paket untuk tiket ini'); return; }
+      c.qty = next;
+      render();
+    }
+
+    cards.forEach(c => {
+      c.addBtn.addEventListener('click', () => bump(c, 1));
+      $('.inc', c.stepper).addEventListener('click', () => bump(c, 1));
+      $('.dec', c.stepper).addEventListener('click', () => bump(c, -1));
+    });
+
+    $$('.pkg-panel').forEach(p => {
+      const ul = $('.ben-list', p);
+      const items = BENEFITS[p.dataset.benefit] || BENEFITS['reg-sendiri'];
+      ul.innerHTML = items.map(t => '<li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#14A38B] mt-0.5 shrink-0"></i><span>' + t + '</span></li>').join('');
+    });
+
+    $$('.pkg-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const panel = document.getElementById(btn.getAttribute('aria-controls'));
+        const open = !panel.classList.contains('open');
+        panel.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', String(open));
+        if (open) window.lucide && lucide.createIcons();
+      });
+    });
+
+    const jadwalBtn = $('.jadwal-toggle');
+    if (jadwalBtn) {
+      jadwalBtn.addEventListener('click', () => {
+        const panel = document.getElementById(jadwalBtn.getAttribute('aria-controls'));
+        const open = !panel.classList.contains('open');
+        panel.classList.toggle('open', open);
+        jadwalBtn.setAttribute('aria-expanded', String(open));
+        jadwalBtn.textContent = open ? 'Sembunyikan Jadwal' : '+2 Jadwal Lainnya';
+      });
+    }
+
+    const lightbox = $('#lightbox');
+    const lbImg = $('#lightboxImg');
+    const lbCap = $('#lightboxCap');
+    let lastFocus = null;
+    function openLb(src, alt) {
+      lastFocus = document.activeElement;
+      lbImg.src = src; lbImg.alt = alt; lbCap.textContent = alt;
+      lightbox.classList.add('on');
+      document.body.classList.add('noscroll');
+      $('#lightboxClose').focus();
+    }
+    function closeLb() {
+      lightbox.classList.remove('on');
+      document.body.classList.remove('noscroll');
+      if (lastFocus) lastFocus.focus();
+    }
+    $$('.img-view').forEach(b => b.addEventListener('click', () => {
+      const img = $('img', b.closest('figure'));
+      openLb(img.getAttribute('src'), img.alt);
+    }));
+    $('#lightboxClose').addEventListener('click', closeLb);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLb(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && lightbox.classList.contains('on')) closeLb(); });
+
+    checkoutBtn.addEventListener('click', () => {
+      if (!checkoutBtn.classList.contains('is-ready')) { toast('Pilih tiket terlebih dahulu'); return; }
+      if (navigating) return;
+      navigating = true;
+      checkoutBtn.classList.add('is-loading');
+      toast('Menyiapkan data pemesanan...');
+      const items = cards.filter(c => c.qty > 0).map(c => ({ id: c.id, name: c.name, price: c.price, qty: c.qty, pkg: c.min }));
+      const tickets = items.reduce((s, c) => s + c.qty * c.pkg, 0);
+      const total = items.reduce((s, c) => s + c.qty * c.price * c.pkg, 0);
+      try {
+        localStorage.setItem('gesrek_order', JSON.stringify({ items: items, tickets: tickets, total: total, createdAt: Date.now() }));
+        localStorage.setItem('gesrek_order_deadline', String(Date.now() + 5 * 60 * 1000));
+        localStorage.removeItem('gesrek_holders');
+      } catch (e) {}
+      setTimeout(() => { location.href = 'form.html'; }, 500);
+    });
+    window.addEventListener('pageshow', () => { navigating = false; checkoutBtn.classList.remove('is-loading'); });
+
+    $('#detailBtn').addEventListener('click', () => {
+      const picked = cards.filter(c => c.qty > 0);
+      if (!picked.length) { toast('Belum ada tiket dipilih'); return; }
+      toast(picked.map(c => c.qty + 'x ' + c.name).join(' · '));
+    });
+
+    $('#newsForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const v = $('#newsEmail').value.trim();
+      if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { toast('Berhasil berlangganan newsletter'); $('#newsEmail').value = ''; }
+      else toast('Masukkan alamat email yang valid');
+    });
+
+    $('#langBtn').addEventListener('click', () => toast('Bahasa: Indonesia'));
+    $('#exploreBtn').addEventListener('click', () => toast('Jelajahi event menarik lainnya'));
+    $('#userBtn').addEventListener('click', () => toast('Masuk ke akun Goers kamu'));
+    $('#searchInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter' && e.target.value.trim()) { toast('Mencari "' + e.target.value.trim() + '"'); e.target.value = ''; e.target.blur(); }
+    });
+    $$('.demo-link').forEach(a => a.addEventListener('click', () => toast('Halaman demo "' + a.textContent.trim() + '"')));
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+    $$('.reveal').forEach(el => io.observe(el));
+
+    const initIcons = () => { window.lucide && lucide.createIcons(); };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initIcons, { once: true });
+    else initIcons();
+    window.addEventListener('load', initIcons, { once: true });
+
+    render();
+  })();
+  </script>
+</body>
+</html>
